@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= +prompt("nhap gia tri a");
+    let b=+prompt("nhap gia tri b");
+    let c= +prompt("nhap gia tri c");
+    if (a==0){
+        if (c==0){
+            alert("phuong trinh vo so nghiem");
+        }else {
+            if (b!=0){
+                alert("nghiem cua phuong trinh la x= "+-c/b)
+            }else {alert("phuong trinh vo nghiem")}
+        }
+    }else {
+        d=b*b-4*a*c;
+       switch (d){
+           case 0:
+             alert( " phuong trinh co nghiem kep la x= "+-b/2*a) ;
+             break;
+           case Math.abs(d):
+               alert("phuong trinh co 2 nghiem " +"x1= "+ (Math.sqrt(d)-b)/2*a+" va x2= "+-(Math.sqrt(d)+b)/2*a );
+               break;
+           default: alert("phuong trinh vo nghiem")
+        }
+    }
+
+
+</script>
+</body>
+</html>
